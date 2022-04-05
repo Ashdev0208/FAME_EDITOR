@@ -53,6 +53,33 @@ a{
     text-decoration: none;
 }
 
+/* -=+= loading start =+=- */
+.loading{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#54e,#e45);
+    z-index: 99999999999;
+    position: fixed;
+    transition: .6s ease all;
+}
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.wrapper img{
+    left: -162%;
+    position: absolute;
+    top: -91%;
+    height: 199px;
+}
+/* -=+= loading end =+=- */
+
 /* -=+= heasder start =+=- */
 
 header{
@@ -84,14 +111,16 @@ nav{
     width: 100%;
     left: 0;
     padding: 1rem;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0px);
     transition: .6s ease all;
 }
 
 nav.active{
-    background: rgba(34, 34, 34, 0.644);
-    box-shadow: 0px 3px 10px #000000f8;
+    background: rgba(153, 0, 255, 0.575);
+    box-shadow: 0px 3px 10px #00000060;
+    backdrop-filter: blur(10px);
     padding: .3rem;
+    
 }
 
 
@@ -136,7 +165,7 @@ nav.active{
 .links ul li a:hover::before{
     opacity: 1;
     transform: skew(0deg , 0deg) scale(1);
-    color: #54e;
+    color: rgb(255, 0, 242);
     -webkit-text-stroke: 2px transparent;
 }
 
