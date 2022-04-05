@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: roboto;
+}
+
+.title{
+    font-family: American Typewriter;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+}
+
+.text{
+    font-size: 1rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.js-b{
+    justify-content: space-between;
+}
+
+.ai-c{
+    align-items: center;
+}
+
+.container{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.white{
+    color: #fff;
+}
+
+.black{
+    color: #000;
+}
+
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* -=+= heasder start =+=- */
+
+header{
+    width: 100%;
+    position: relative;
+    height: 800px;
+    background: radial-gradient(#0000004d,#444fee41);
+    overflow: hidden;
+}
+
+.bg{
+    width: 1440px;
+    height: 820px;
+    position: absolute;
+    overflow: hidden;
+    top: -20px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+.bg video{
+    width: 100%;
+    height: 102%;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding: 1rem;
+    backdrop-filter: blur(2px);
+    transition: .6s ease all;
+}
+
+nav.active{
+    background: rgba(34, 34, 34, 0.644);
+    box-shadow: 0px 3px 10px #000000f8;
+    padding: .3rem;
+}
+
+
+.logo img{
+    width: 5rem;
+    padding: 10px;
+}
+
+.logo a h2{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* -=+= menu open and close start =+=- */
+.none{
+    display: none;
+}
+/* -=+= menu open and close end =+=- */
+
+.links ul li a{
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    font-size: 1.2rem;
+    transition: .6s ease all;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.links ul li a::before{
+    content: attr(data-nameLink);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: skew(30deg , 172deg) scale(0);
+    color: #fff;
+    transition: .6s ease all;
+    opacity: 0;
+}
+
+.links ul li a:hover::before{
+    opacity: 1;
+    transform: skew(0deg , 0deg) scale(1);
+    color: #54e;
+    -webkit-text-stroke: 2px transparent;
+}
+
+nav.active .links ul li a:hover::before{
+    color: #000;
+}
+
+/* -=+= banner start =+=- */
+
+.banner{
+    width: 100%;
+    height: 100%;
+    padding: 17rem 0 0 0;
+}
+
+.banner-desc{
+    text-align: center;
+    width: 100%;
+}
+
+.banner-desc .text{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.channel a{
+    padding: .5rem 1rem;
+
+}
+
+.channel a img:hover{
+    transform: rotateZ(360deg);
+}
+
+.channel a img{
+    width: 3rem;
+    transition: .6s ease all;
+}
+/* -=+= banner end =+=- */
+
+/* -=+= header end =+=- */
+
+/* -=+= responsive design start =+=- */
+
+/* -=+= media min-width 1440px start =+=- */
+
+@media only screen and (min-width: 1441px) {
+    .bg{
+        width: 100%;
+        height: 1000px;
+        margin-top: -6rem;
+    }
+    .links ul li a{
+        font-size: 1.3rem;
+    }
+}
+
+/* -=+= media min-width 1440px end =+=- */
+
+/* -=+= media min-width 1809px start =+=- */
+
+@media only screen and (min-width: 1809px) {
+    .bg{
+        width: 100%;
+        height: 1300px;
+        margin-top: -8.5rem;
+    }
+    .links ul li a{
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+}
+
+/* -=+= media min-width 1809px end =+=- */
+
+/* -=+= media min-width 2355px start =+=- */
+
+@media only screen and (min-width: 2355px) {
+    .bg{
+        width: 100%;
+        height: 1500px;
+        margin-top: -9.5rem;
+    }
+    .links ul li a{
+        padding: 3rem;
+        font-size: 1.6rem;
+    }
+}
+
+/* -=+= media min-width 2355px end =+=- */
+
+/* -=+= media 991px =+=- start */
+
+@media only screen and (max-width:991px ){
+    .title{
+        font-size: 1.4rem;
+        line-height: 4.5rem;
+    }
+    .banner-desc .text{
+        font-size: 1.7rem;
+    }
+    .links {
+        position: absolute;
+        right: 0;
+        width: 250px;
+        background: #54e;
+        padding: 5rem 0;
+        top: 30px;
+        opacity: 0;
+        pointer-events: none;
+        transition: .6s ease all;
+    }
+    .links.active{
+        right: 0;
+        width: 250px;
+        opacity: 1;
+        pointer-events: all;
+    }
+    .links ul.row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .links ul li{
+        padding: 1rem 0;
+    }
+    .none{
+        display: block;
+        background: url(../img/fi-rr-menu-burger.svg) center/cover;
+        filter: invert(1);
+        width: 40px;
+        cursor: pointer;
+        height: 40px;
+        z-index: 999999;
+        transition: .6s ease all;
+    }
+    .none.active{
+        background-image: url(../img/fi-rr-cross-circle.svg);
+    }
+}
+
+
+
+/* -=+= media 991px =+=- start */
+
+/* -=+= media 350px =+=- start */
+
+@media only screen and (max-width: 350px){
+
+    nav{
+        padding: .1rem .3rem;
+    }
+
+    .logo a.row{
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: .9rem;
+    }
+}
+
+/* -=+= media 350px =+=- start */
+
+/* -=+= responsive design end =+=- */
