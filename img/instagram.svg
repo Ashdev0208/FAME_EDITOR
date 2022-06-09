@@ -1,10 +1,13 @@
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="99" height="100" viewBox="0 0 99 100">
-  <g id="_05.instagram" data-name="05.instagram">
-    <ellipse id="background" cx="49.5" cy="50" rx="49.5" ry="50" fill="none"/>
-    <g id="icon" fill="#fff" transform="translate(11.356 11.998)">
-      <path id="Path_2" data-name="Path 2" d="M91.36,38H60.64A22.67,22.67,0,0,0,38,60.64V91.36A22.67,22.67,0,0,0,60.64,114H91.36A22.66,22.66,0,0,0,114,91.36V60.64A22.67,22.67,0,0,0,91.36,38Zm15,53.36a15,15,0,0,1-15,15H60.64a15,15,0,0,1-15-15V60.64a15,15,0,0,1,15-15H91.36a15,15,0,0,1,15,15Z" transform="translate(-38 -38)"/>
-      <path id="Path_3" data-name="Path 3" d="M76,56.35A19.66,19.66,0,1,0,95.65,76,19.66,19.66,0,0,0,76,56.35ZM76,88A12,12,0,1,1,88,76,12,12,0,0,1,76,88Z" transform="translate(-38 -38)"/>
-      <circle id="Ellipse_12"  data-name="Ellipse 12" cx="4.86" cy="4.86" r="4.86" transform="translate(52.91 13.49)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <g id="instagram" transform="translate(4 4)">
+    <g id="Rectangle_13" data-name="Rectangle 13" fill="none" stroke="#000" stroke-width="4">
+      <rect width="41" height="41" rx="8" stroke="none"/>
+      <rect x="-2" y="-2" width="45" height="45" rx="10" fill="none"/>
     </g>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="matrix(1, -0.017, 0.017, 1, 8.792, 9.211)" fill="none" stroke="#000" stroke-width="4">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="10" fill="none"/>
+    </g>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="4" cy="4" r="4" transform="translate(37.665 10.483) rotate(173)"/>
   </g>
 </svg>

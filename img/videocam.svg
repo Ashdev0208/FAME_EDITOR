@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.674" height="36.743" viewBox="0 0 74.674 36.743">
+  <g id="videocam-outline" transform="translate(-39.5 -125.5)">
+    <path id="Path_145" data-name="Path 145" d="M369.278,161.447l15.573,6.284a5.01,5.01,0,0,0,2.865-.13c.855-.319,1.371-.863,1.371-1.448V145.347c0-.585-.516-1.13-1.371-1.448a5.01,5.01,0,0,0-2.865-.13l-15.573,6.284c-.8.323-1.278.85-1.278,1.412v8.57c0,.561.477,1.088,1.278,1.412Z" transform="translate(-277.414 -11.879)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <path id="Path_146" data-name="Path 146" d="M63.444,159.743H38.928A6.72,6.72,0,0,1,32,153.3V134.448A6.72,6.72,0,0,1,38.928,128h24.58a6.66,6.66,0,0,1,6.864,6.388V153.3A6.72,6.72,0,0,1,63.444,159.743Z" transform="translate(10)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+</svg>

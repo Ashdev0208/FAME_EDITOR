@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded' , () => {
     // scroll event start
 
     window.addEventListener('scroll', () =>  {
-        nav.classList.toggle('active' , window.scrollY > 100);
+        nav.classList.toggle('active' , window.scrollY > 0);
     });
 
     // scroll event end
@@ -37,4 +37,5 @@ window.addEventListener('DOMContentLoaded' , () => {
         });
     });
     // menu start
+
 });
